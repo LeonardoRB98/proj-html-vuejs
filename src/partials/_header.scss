@@ -36,7 +36,6 @@ header {
           }
           a {
             text-decoration: none;
-            text-transform: uppercase;
             &:hover {
               margin-bottom: 2px solid $primaryTextColor;
             }
@@ -53,6 +52,21 @@ header {
     overflow: visible;
     img {
       width: 100%;
+    }
+    #box_jumbotron {
+      position: absolute;
+      top: 50%;
+      left: 70px;
+      transform: translateY(-200px);
+      width: 450px;
+      height: 400px;
+      h1 {
+        color: $primaryTextColor;
+      }
+      p {
+        color: $secondaryTextColor;
+        margin: 20px 0;
+      }
     }
   }
 

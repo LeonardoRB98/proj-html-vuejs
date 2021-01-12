@@ -8,6 +8,45 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+h1 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.touppercase {
+  text-transform: uppercase;
+}
+
+.small_text {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #878589;
+}
+
+.white_btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+.white_btn:hover {
+  background-color: #5b2ca2;
+}
+.white_btn:hover a {
+  color: #ffffff;
+}
+.white_btn a {
+  color: #5b2ca2;
+  text-decoration: none;
+}
+
 header #top_header {
   content: "";
   display: table;
@@ -61,7 +100,6 @@ header #top_header #header_right ul li:hover a {
 }
 header #top_header #header_right ul li a {
   text-decoration: none;
-  text-transform: uppercase;
 }
 header #top_header #header_right ul li a:hover {
   margin-bottom: 2px solid #5b2ca2;
@@ -75,4 +113,19 @@ header #full_screen_jumbotron {
 }
 header #full_screen_jumbotron img {
   width: 100%;
+}
+header #full_screen_jumbotron #box_jumbotron {
+  position: absolute;
+  top: 50%;
+  left: 70px;
+  transform: translateY(-200px);
+  width: 450px;
+  height: 400px;
+}
+header #full_screen_jumbotron #box_jumbotron h1 {
+  color: #5b2ca2;
+}
+header #full_screen_jumbotron #box_jumbotron p {
+  color: #878589;
+  margin: 20px 0;
 }
