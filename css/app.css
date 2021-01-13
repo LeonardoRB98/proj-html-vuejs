@@ -14,8 +14,29 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 40px;
+  color: #5b2ca2;
+  margin: 15px 0;
+}
+
+h3 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 35px;
+  color: #5b2ca2;
+  margin: 20px 0;
+}
+
+h4 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 25px;
+  color: #5b2ca2;
+}
+
 p {
   line-height: 1.8;
+  margin: 20px 0;
 }
 
 .touppercase {
@@ -33,20 +54,155 @@ p {
   display: inline-block;
   padding: 10px 25px;
   border-radius: 5px;
-  background-color: white;
+  text-decoration: none;
   cursor: pointer;
+  background-color: #ffffff;
+  color: #5b2ca2;
 }
 .white_btn:hover {
   background-color: #5b2ca2;
-}
-.white_btn:hover a {
   color: #ffffff;
 }
-.white_btn a {
-  color: #5b2ca2;
+
+.purple_btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 5px;
   text-decoration: none;
+  cursor: pointer;
+  background-color: #5b2ca2;
+  color: #ffffff;
+}
+.purple_btn:hover {
+  background-color: #F0EDF5;
+  color: #5b2ca2;
 }
 
+.img_container {
+  position: relative;
+  width: 48%;
+  height: 100%;
+  background-color: green;
+}
+.img_container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.box20 {
+  width: 20%;
+  height: 100%;
+}
+
+.box30 {
+  width: 30%;
+  height: 100%;
+}
+
+.box70 {
+  width: 70%;
+  height: 100%;
+}
+
+.box80 {
+  width: 80%;
+  height: 100%;
+}
+
+.img_container {
+  position: relative;
+}
+.img_container:hover .overlap {
+  opacity: 1;
+}
+.img_container .overlap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.img_container .overlap div {
+  position: absolute;
+  text-align: center;
+}
+.img_container .overlap div span {
+  color: white;
+}
+.img_container .overlap h3, .img_container .overlap span {
+  color: white;
+}
+.img_container .overlap h3:last-child, .img_container .overlap span:last-child {
+  word-spacing: 30px;
+}
+
+.back_arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 80px;
+  background-color: rgba(91, 44, 162, 0.4);
+  color: #ffffff;
+  cursor: pointer;
+  left: 0;
+}
+.back_arrow:hover {
+  background-color: #5b2ca2;
+}
+
+.forward_arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 80px;
+  background-color: rgba(91, 44, 162, 0.4);
+  color: #ffffff;
+  cursor: pointer;
+  right: 0;
+}
+.forward_arrow:hover {
+  background-color: #5b2ca2;
+}
+
+.centered_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/hero-header-bakery.jpg");
+  background-size: cover;
+  margin-bottom: 150px;
+}
 header #top_header {
   content: "";
   display: table;
@@ -93,7 +249,7 @@ header #top_header #header_right ul {
 header #top_header #header_right ul li {
   cursor: pointer;
   height: 100%;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 header #top_header #header_right ul li:hover a {
   border-bottom: 2px solid #5b2ca2;
@@ -104,17 +260,7 @@ header #top_header #header_right ul li a {
 header #top_header #header_right ul li a:hover {
   margin-bottom: 2px solid #5b2ca2;
 }
-header #full_screen_jumbotron {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  overflow: visible;
-}
-header #full_screen_jumbotron img {
-  width: 100%;
-}
-header #full_screen_jumbotron #box_jumbotron {
+header #box_jumbotron {
   position: absolute;
   top: 50%;
   left: 70px;
@@ -122,10 +268,68 @@ header #full_screen_jumbotron #box_jumbotron {
   width: 450px;
   height: 400px;
 }
-header #full_screen_jumbotron #box_jumbotron h1 {
+header #box_jumbotron h1 {
   color: #5b2ca2;
 }
-header #full_screen_jumbotron #box_jumbotron p {
+header #box_jumbotron p {
   color: #878589;
   margin: 20px 0;
+}
+
+main {
+  width: 100%;
+  height: 3000px;
+}
+main .wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+main .wrapper #products {
+  width: 100%;
+  margin-bottom: 150px;
+  height: 650px;
+  display: flex;
+}
+main .wrapper #products .box30 {
+  padding: 10px;
+  padding-right: 60px;
+}
+main .wrapper #products .box30 .purple_btn {
+  margin-top: 70px;
+}
+main .wrapper #products .box70 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+main .wrapper #special_events {
+  width: 100%;
+  margin-bottom: 150px;
+}
+main .wrapper #special_events .container {
+  height: 700px;
+  justify-content: space-between;
+}
+main .wrapper #shop {
+  width: 100%;
+  margin-bottom: 150px;
+  height: 420px;
+  display: flex;
+  text-align: center;
+}
+main .wrapper #shop .box20 {
+  text-align: center;
+  padding: 10px;
+}
+main .wrapper #shop .box80 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background-color: green;
+}
+main .wrapper #shop .box80 .img_container {
+  height: 80%;
+  width: 22%;
+  background-size: contain;
 }

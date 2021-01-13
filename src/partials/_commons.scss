@@ -11,8 +11,26 @@ h1 {
   font-size: 50px;
   font-weight: 700;
 }
+h2 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 40px;
+  color: $primaryTextColor;
+  margin: 15px 0;
+}
+h3 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 35px;
+  color: $primaryTextColor;
+  margin: 20px 0;
+}
+h4 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 25px;
+  color: $primaryTextColor;
+}
 p {
   line-height: 1.8;
+  margin: 20px 0;
 }
 .touppercase {
   text-transform: uppercase;
@@ -23,20 +41,102 @@ p {
   font-size: 12px;
   color: $secondaryTextColor;
 }
+
 .white_btn {
-  display: inline-block;
-  padding: 10px 25px;
-  border-radius: 5px;
-  background-color: white;
-  cursor: pointer;
+  @include btnStructure;
+  background-color: #ffffff;
+  color: $primaryTextColor;
   &:hover {
     background-color: $primaryTextColor;
-    a {
       color: #ffffff;
+  }
+}
+.purple_btn {
+  @include btnStructure;
+  background-color: $primaryTextColor;
+  color: #ffffff;
+  &:hover {
+    background-color: $btnwhiteHover;
+      color: $primaryTextColor;
+  }
+}
+.img_container {
+  position: relative;
+  width: 48%;
+  height: 100%;
+  background-color: green;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+.box20 {
+  width: 20%;
+  height: 100%;
+}
+.box30 {
+  width: 30%;
+  height: 100%;
+}
+.box70 {
+  width: 70%;
+  height: 100%;
+}
+.box80 {
+  width: 80%;
+  height: 100%;
+}
+.img_container {
+  position: relative;
+  &:hover .overlap{
+    opacity: 1;
+  }
+  .overlap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    div {
+      position: absolute;
+      text-align: center;
+      span {
+        color: white;
+
+      }
+    }
+    h3, span {
+      color: white;
+      &:last-child {
+        word-spacing: 30px;
+      }
     }
   }
-  a {
-    color: $primaryTextColor;
-    text-decoration: none;
-  }
+
+}
+.back_arrow {
+  @include arrow_carousel;
+  left: 0;
+}
+.forward_arrow {
+  @include arrow_carousel;
+  right: 0;
+}
+.centered_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 60px;
+}
+.container {
+  width: 100%;
+  display: flex;
 }
