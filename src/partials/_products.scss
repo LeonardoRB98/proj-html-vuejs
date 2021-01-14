@@ -1,0 +1,17 @@
+#products {
+  @include standardMain;
+  height: 650px;
+  display: flex;
+  .box30 {
+    padding: 10px;
+    padding-right: 60px;
+    .purple_btn {
+      margin-top: 70px;
+    }
+  }
+  .box70 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+}

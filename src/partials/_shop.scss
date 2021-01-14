@@ -1,0 +1,21 @@
+#shop {
+  @include standardMain;
+  height: 420px;
+  display: flex;
+  text-align: center;
+  .box20 {
+    text-align: center;
+    padding: 10px;
+  }
+  .box80 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    .img_container {
+      height: 80%;
+      width: 22%;
+      background-size: contain;
+    }
+  }
+}

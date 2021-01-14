@@ -50,6 +50,11 @@ p {
   color: #878589;
 }
 
+.gigantic_text {
+  font-size: 100px;
+  color: #ffffff;
+}
+
 .white_btn {
   display: inline-block;
   padding: 10px 25px;
@@ -89,6 +94,10 @@ p {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+main {
+  width: 100%;
 }
 
 .wrapper {
@@ -205,6 +214,36 @@ p {
   display: flex;
 }
 
+.sequenzal_box {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.sequenzal_box .top_row {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+.sequenzal_box .top_row h1, .sequenzal_box .top_row span {
+  color: #ffffff;
+}
+.sequenzal_box .bottom_row {
+  width: 100%;
+  display: flex;
+  height: 50%;
+}
+.sequenzal_box .bottom_row div {
+  width: 30%;
+}
+.sequenzal_box .bottom_row div span {
+  font-size: 18px;
+  color: #949494;
+}
+.sequenzal_box .bottom_row div p {
+  color: #ffffff;
+}
+
 header {
   position: relative;
   width: 100%;
@@ -286,60 +325,69 @@ header #box_jumbotron p {
   margin: 20px 0;
 }
 
-main {
-  width: 100%;
-}
-main .wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-main .wrapper #products {
+#products {
   width: 100%;
   margin-bottom: 150px;
   height: 650px;
   display: flex;
 }
-main .wrapper #products .box30 {
+#products .box30 {
   padding: 10px;
   padding-right: 60px;
 }
-main .wrapper #products .box30 .purple_btn {
+#products .box30 .purple_btn {
   margin-top: 70px;
 }
-main .wrapper #products .box70 {
+#products .box70 {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
-main .wrapper #special_events {
+
+#special_events {
   width: 100%;
   margin-bottom: 150px;
 }
-main .wrapper #special_events .container {
+#special_events .container {
   height: 700px;
   justify-content: space-between;
 }
-main .wrapper #shop {
+
+#shop {
   width: 100%;
   margin-bottom: 150px;
   height: 420px;
   display: flex;
   text-align: center;
 }
-main .wrapper #shop .box20 {
+#shop .box20 {
   text-align: center;
   padding: 10px;
 }
-main .wrapper #shop .box80 {
+#shop .box80 {
   position: relative;
   display: flex;
   justify-content: space-between;
   height: 100%;
 }
-main .wrapper #shop .box80 .img_container {
+#shop .box80 .img_container {
   height: 80%;
   width: 22%;
   background-size: contain;
+}
+
+#tell_us {
+  width: 100%;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+  height: 800px;
+  background-color: coral;
+  background-image: url("../img/bakery-process-1.jpg");
+  background-size: cover;
+}
+#tell_us .bottom_row {
+  justify-content: flex-end;
 }
 
 footer {

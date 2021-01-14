@@ -1,0 +1,7 @@
+#special_events {
+  @include standardMain;
+  .container {
+    height: 700px;
+    justify-content: space-between;
+  }
+}

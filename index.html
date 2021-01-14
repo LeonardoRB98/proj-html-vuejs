@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/app.css">
     <title>Bakery</title>
   </head>
-  <body id="root">
+  <body>
     <div id="vue_instance">
       <!-- header -->
       <header>
@@ -26,7 +26,7 @@
           </div>
           <div id="header_right">
             <ul>
-              <!-- <li><a href="#" class="touppercase"><i class="fas fa-shopping-cart"></i></a></li> -->
+              <li><a href="#" class="touppercase"><i class="fas fa-shopping-cart"></i></a></li>
               <li v-for="label in headerLabel"><a href="#" class="touppercase">{{ label }}</a></li>
             </ul>
           </div>
@@ -44,8 +44,8 @@
 
       <!-- main -->
       <main>
+        <!-- products section -->
         <div class="wrapper">
-          <!-- products section -->
           <section id="products">
             <div class="box30">
               <span class="touppercase small_text">OUR PRODUCTS</span>
@@ -77,9 +77,11 @@
               </div>
             </div>
           </section>
-          <!-- /products section -->
+        </div>
+        <!-- /products section -->
 
-          <!-- special events section -->
+        <!-- special events section -->
+        <div class="wrapper">
           <section id="special_events">
             <div class="centered_title">
               <span class="touppercase small_text">corporate & weddings</span>
@@ -115,7 +117,10 @@
               <!-- /image 2 -->
             </div>
           </section>
-          <!-- special events section -->
+        </div>
+        <!-- special events section -->
+        <!-- shop -->
+        <div class="wrapper">
           <div id="shop">
             <div class="box20">
               <h3>Find a freshly baked product perfect for you</h3>
@@ -170,8 +175,26 @@
               </div>
             </div>
           </div>
-
         </div>
+        <!-- /shop -->
+        <!-- tell us -->
+          <div class="wrapper">
+            <div id="tell_us">
+              <div class="sequenzal_box">
+                <div class="top_row">
+                  <h1>Tell us what you have in <br>mind</h1>
+                  <span class="gigantic_text">01</span>
+                </div>
+                <div class="bottom_row">
+                  <div>
+                    <span class="touppercase">manual ingredients section</span>
+                    <p>Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec lorem erat, finibus in velit placerat, rutrum augue.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- /tell us -->
       </main>
       <!-- /main -->
 
@@ -184,13 +207,7 @@
                 <img src="img/avada-bakery-logo.png" alt="logo">
               </div>
               <ul>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Journal</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Orders</a></li>
+                <li v-for="label in footerLabel"><a href="#">{{ label }}</a></li>
                 <li><a href="#"><i class="fas fa-shopping-cart"><span>0</span></i></a></li>
               </ul>
             </div>

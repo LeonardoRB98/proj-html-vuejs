@@ -1,0 +1,12 @@
+#tell_us {
+  @include standardMain;
+  display: flex;
+  justify-content: space-between;
+  height: 800px;
+  background-color: coral;
+  background-image: url('../img/bakery-process-1.jpg');
+  background-size: cover;
+  .bottom_row {
+    justify-content: flex-end;
+  }
+}
