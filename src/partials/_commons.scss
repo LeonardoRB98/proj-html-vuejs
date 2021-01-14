@@ -71,12 +71,20 @@ p {
     height: 100%;
   }
 }
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
 .box20 {
   width: 20%;
   height: 100%;
 }
 .box30 {
   width: 30%;
+  height: 100%;
+}
+.box50 {
+  width: 50%;
   height: 100%;
 }
 .box70 {
