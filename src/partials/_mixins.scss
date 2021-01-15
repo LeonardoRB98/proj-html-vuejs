@@ -44,3 +44,14 @@
     background-color: $primaryTextColor;
   }
 }
+
+//da aggiungere img ulrl al div interessato
+@mixin mainH800BackgroundImg {
+  display: flex;
+  justify-content: space-between;
+  height: 800px;
+  background-size: cover;
+  .bottom_row {
+    align-items: flex-end;
+  }
+}

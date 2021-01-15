@@ -1,0 +1,20 @@
+#order_for_pick_up {
+  @include standardMain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  background-image: url('../img/call-to-action-bg.jpg');
+  background-size: cover;
+  padding: 120px;
+  div {
+    width: 30%;
+  }
+  span {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  h2 {
+    color: #ffffff;
+    margin-bottom: 100px;
+  }
+}

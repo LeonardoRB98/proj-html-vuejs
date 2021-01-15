@@ -1,0 +1,22 @@
+#we_start_baking {
+  @include standardMain;
+  display: flex;
+  justify-content: space-between;
+  height: $mainSectionHeight;
+  .box45:first-child {
+    background-image: url('../img/bakery-process-2.jpg');
+    background-size: cover;
+    background-position: right;
+  }
+  .box45:last-child {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $btnwhiteHover;
+    h1 {
+      margin: 30px 0;
+    }
+  }
+}

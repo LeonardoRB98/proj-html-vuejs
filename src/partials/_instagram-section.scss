@@ -1,0 +1,30 @@
+#instagram_section {
+  @include standardMain;
+  height: $mainSectionHeight;
+  display: flex;
+  flex-wrap: wrap;
+  .box25, .box50 {
+    height: calc(50% - 20px);
+    margin: 10px;
+  }
+  .box25 {
+    width: calc(25% - 20px);
+    background-color: violet;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .box50 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 20px);
+    background-color: #F1EDF4;
+    .purple_btn:hover {
+      background-color: #ffffff;
+    }
+  }
+}

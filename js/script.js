@@ -5,6 +5,7 @@ var app = new Vue({
     footerLabel: [],
   },
   methods: {
+    // funzione per filtrare voci header per poterle riutilizzare nel footer
     filteredLabel: function() {
       const self = this;
       this.headerLabel.forEach((item, i) => {
